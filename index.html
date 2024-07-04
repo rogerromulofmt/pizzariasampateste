@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Sampa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+       .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            margin: 0 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            color: #333;
+        }
+
+       .card:hover {
+            background-color: #f7f7f7;
+        }
+
+       .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+       .card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+       .card-icon {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 1.2rem;
+        }
+
+       .city-logo {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            display: block;
+        }
+/* Media Queries para dispositivos móveis */
+@media screen and (max-width: 768px) {
+ .container {
+display: flex;    
+flex-direction: column;
+justify-content: flex-start;
+overflow-y: auto;
+height: 100vh;
+padding-top: 20px;
+padding-bottom: 20px;
+  }
+ /* Adicione essa linha para dar espaço entre os cards */
+  .card + .card {
+    margin-top: 20px; /* ajuste o valor de acordo com sua necessidade */
+  }
+}
+    /* Media Queries para tablets */
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .card {
+            margin: 15px;
+        }
+    }
+
+    /* Media Queries para desktops */
+    @media screen and (min-width: 1024px) {
+        .card {
+            margin: 15px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://menu.brendi.com.br/pizzaria-sampa-pizzaria-sampa-cacoal" target="_blank" class="card">
+            <img src="cacoal-logo.png" class="city-logo">
+            <h2 class="card-title">Pizzaria Sampa Cacoal</h2>
+            <div class="card-content">
+                <div class="card-icon">
+                    <p>Rua Antonio de Paula Nunes, 760 - Princesa Isabel - Cacoal</p>
+                </div>
+                <div class="card-icon">
+                    <i class="fas fa-clock"></i>
+                    <p>20 - 49 min</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://menu.brendi.com.br/pizzaria-sampa-vilhena" target="_blank" class="card">
+            <img src="vilhena-logo.png" class="city-logo">
+            <h2 class="card-title">Pizzaria Sampa Vilhena</h2>
+            <div class="card-content">
+                <div class="card-icon">
+                    <p>Av. Brigadeiro Eduardo Gomes, 1048 - Jardim Eldorado - Vilhena</p>
+                </div>
+                <div class="card-icon">
+                    <i class="fas fa-clock"></i>
+                    <p>20 - 49 min</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
